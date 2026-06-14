@@ -1,0 +1,10 @@
+name: sysurv
+channels:
+  - conda-forge
+dependencies:
+  - ipykernel
+  - matplotlib
+  - pytorch
+  - scikit-survival
+  - tqdm
+
