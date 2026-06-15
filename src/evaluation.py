@@ -43,6 +43,6 @@ def validate_subgroups(scores, n_subgroups, exceptionalities, plot=True):
         "sigma": float(sigma),
         "p_values": p_values,
         "corrected_alpha": corrected_alpha,
-        "cutoff": cutoff,
+        "cutoff": float(cutoff),
         "is_significant": is_significant
     }

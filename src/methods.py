@@ -416,20 +416,4 @@ class SySurv(SoftRuleMethod):
         return -adj_L1
 
     def _account_for_priors(self, preds, classlabel, subgroup_model, priors):
-        res = 0
-
-        if not hasattr(self, 'prior_means'): self.prior_means = []
-
-        membership = classlabel[:, 1].float().reshape(-1, 1)
-        ns = membership.sum(axis=0)
-
-        # why regularize this and not the population, arguably one would want the subgroups to differ from each other
-        # rather than from the overall (in the anomaly approach, that is)
-
-        for idx, subgroup in enumerate(self.subgroups):
-            if idx == len(self.prior_means): self.prior_means.append(preds[subgroup].mean(axis=0))
-            curr_mean = self.prior_means[idx]
-
-            res += (membership.squeeze() * (preds - curr_mean).abs().sum(axis=1)).sum(axis=0) / ns
-
-        return ns ** self.config.alpha * self.config.lambd * res
+        return 0
