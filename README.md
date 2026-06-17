@@ -1,4 +1,4 @@
-# Learning and Naming Subgroups with Exceptional Survival Characteristics
+# Discovering Subgroups with Exceptional Survival Characteristics
 
 This is the Python implementation of the paper [<u>Discovering Subgroups with Exceptional Survival Characteristics</u>](https://arxiv.org/abs/2602.22179). We additionally provide a demo in a Jupyter notebook to provide an easy starting point. 
 
