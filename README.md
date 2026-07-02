@@ -4,11 +4,11 @@ This is the Python implementation of the paper [<u>Discovering Subgroups with Ex
 
 ## Required packages
 
-- ```pytorch``` *for learning.*
-- ```scikit-survival``` *for survival analysis.*
-- ```matplotlib``` *for plotting.*
-- ```tqdm``` *for progress bars.*
-- ```ipykernel``` *for Jupyter notebooks.*
+- `pytorch` *for learning.*
+- `scikit-survival` *for survival analysis.*
+- `matplotlib` *for plotting.*
+- `tqdm` *for progress bars.*
+- `ipykernel` *for Jupyter notebooks.*
 
 You can use the Mamba environment manager to install the required packages like so
 
@@ -24,7 +24,7 @@ You can use the Mamba environment manager to install the required packages like 
 
 ## Usage
 
-In the Jupyter notebook ```Demo.ipynb```, we show how to use Sysurv. As an example, we use the case study dataset provided in ```data/case_study/``` and replicate the plot below. The parameters for Sysurv can be set using the ```SysurvConfig``` class. To ease the readability, the majority of the code is implemented in ```src/```.
+In the Jupyter notebook `Demo.ipynb`, we show how to use Sysurv. As an example, we use the case study dataset provided in `data/case_study/` and replicate the plot below. The parameters for Sysurv can be set using the `SysurvConfig` class. To ease the readability, the majority of the code is implemented in `src/`.
 
 <p align=center >
     <img src="imgs/image.png" alt="drawing" width="350" />
@@ -34,16 +34,15 @@ In the Jupyter notebook ```Demo.ipynb```, we show how to use Sysurv. As an examp
 
 If you find our work useful for your research, please consider citing
 
-
 ```
 @misc{alrahwanji:2026:sysurv,
-    title={Learning and Naming Subgroups with Exceptional Survival Characteristics}, 
-    author={Al Rahwanji, Mhd Jawad and Xu, Sascha and Walter, Nils Philipp and Vreeken, Jilles},
-    year={2026},
-    eprint={2602.22179},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG},
-    url={https://arxiv.org/abs/2602.22179}, 
+      title={Discovering Subgroups with Exceptional Survival Characteristics}, 
+      author={Al Rahwanji, Mhd Jawad and Xu, Sascha and Walter, Nils Philipp and Vreeken, Jilles},
+      year={2026},
+      eprint={2602.22179},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2602.22179}, 
 }
 ```
 
